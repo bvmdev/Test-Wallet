@@ -1,5 +1,11 @@
 # Test-Wallet
 
+# Arquitetura
+
+![image](https://github.com/bvmdev/Test-Wallet/assets/33611537/3d53b629-171d-47a7-8d45-c202740a6e9a)
+
+Os serviços não possuem ClassLibrary Core com o intuito de ter uma abordagem que segue o conceito de Simple First e também pela arquitetura ter definido não levar neste início de projeto interdependencias de código entre os projetos.
+
 # Estrutura das APIs Envolvidas
 
 Domain:
@@ -76,5 +82,5 @@ Run dotnet build
 
 Run dotnet test
 
-![image](https://github.com/bvmdev/Test-Wallet/assets/33611537/3d53b629-171d-47a7-8d45-c202740a6e9a)
+
 
