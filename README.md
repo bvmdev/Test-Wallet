@@ -75,3 +75,6 @@ Run dotnet restore
 Run dotnet build
 
 Run dotnet test
+
+![image](https://github.com/bvmdev/Test-Wallet/assets/33611537/3d53b629-171d-47a7-8d45-c202740a6e9a)
+
