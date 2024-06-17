@@ -1,31 +1,56 @@
-# Test-WalletService - v.1.0.0
+# Test-Wallet
 
-# Pre-Req
+# Pré-Requisitos
 
-.Net Runtime 8.0
-.Net SDK 8.0
+Instalar o .Net Runtime 8.0 e o .Net SDK 8.0
+Docker
 
-# Running Entries API
+1- Abrir o terminal e navegar até a pasta Docker
+2- Run docker-compose up -d
+3- Confirmar se foi criado o container com o nome docker ou wallet-carrefour
 
-Open de the terminal
-Navigate to WalletService Directory (/src)
-Run dotnet restore
-Run dotnet build
-Run dotnet run
+Os passos acima são obrigatórios para que seja criado o container do banco de dados.
 
-Access the swagger UI from http://localhost:PORT/swagger (port is yout output dotnet run listening on)
+# Executando Entries API
+
+1- Abrir o Terminal
+2- Navegar até o diretório da api Entries (EntriesService/src)
+3- Run dotnet restore
+4- Run dotnet build
+5- Run dotnet ef database update --context ApplicationDbContext
+6- Run dotnet run
+
+Acessar o Swagger UI pela URL http://localhost:5001/swagger (ou a porta especificada no output do comando dotnet run)
 
 Endpoints:
 
-POST /api/entry: Add new Entry
-GET /api/entryType: Get Entry Types to use in POST Route
+POST /api/entry: Adicionar Lançamento
+GET /api/entryType: Listar Tipos de Lançamentos
+
+# Executando Balance API
+
+1- Abrir o Terminal
+2- Navegar até o diretório da api BValance (BalanceService/src)
+3- Run dotnet restore
+4- Run dotnet build
+5- Run dotnet run
+
+Acessar o Swagger UI pela URL http://localhost:5002/swagger (ou a porta especificada no output do comando dotnet run)
+
+GET /api/balance: Lista o extrato consolidado pela data de referência informando: TotalBalance, TotalDebit, TotalCredito, ReferenceDate
+
+Endpoints:
+
+POST /api/entry: Adicionar Lançamento
+GET /api/entryType: Listar Tipos de Lançamentos
 
 
-# Running Unit Tests
 
-Open de the terminal
+# Executando Testes Unitários das APIs
 
-Navigate to UnitTests Directory (/Tests/UnitTests)
+Abrir o Terminal
+
+Navegar para UnitTests do respectivo projeto (/Tests/UnitTests)
 
 Run dotnet restore
 
