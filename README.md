@@ -1,5 +1,23 @@
 # Test-Wallet
 
+# Estrutura das APIs Envolvidas
+
+Domain:
+Contém as entidades, DTOs e interfaces da API.
+
+Application:
+Contém os Handlers utilizados na API via Imediator.
+
+Migrations:
+Contém o controle de migrações do EF Core.
+
+Infrastructure:
+Implementações de repositórios e contexto de banco de dados.
+
+Tests:
+Testes Unitários da API.
+
+
 # Pré-Requisitos
 
 Instalar o .Net Runtime 8.0 e o .Net SDK 8.0
