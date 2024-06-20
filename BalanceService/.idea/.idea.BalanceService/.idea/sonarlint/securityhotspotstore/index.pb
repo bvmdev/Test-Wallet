@@ -1,0 +1,35 @@
+
+>
+src/Program.cs,0/d/0d226294c60b24a952375918e1cc6f8387fe28d1
+Z
+*src/Infrastructure/ApplicationDbContext.cs,9/c/9c44bec996f69c9dd6ebeb4b15ee3d83296c99d8
+^
+.src/Application/Controllers/EntryController.cs,8/a/8a133d3b3ac08414d4124ffabd9e03165c16d50a
+`
+0src/Application/Controllers/BalanceController.cs,4/7/47d11c28d369ab18b7dd3fdee799135ae483a7e1
+i
+9src/Application/Commands/GetConsolidatedBalanceCommand.cs,1/5/15bab5475441b71c176496301a915e425da0ff88
+P
+ src/Domain/DTOs/GetBalanceDTO.cs,1/9/19acd21e8f7873aa7a3c08c0f4650893c435d67e
+[
++src/Application/Handlers/AddEntryHandler.cs,6/3/631fcecb9aa5af600bbb45ff23c62d52ad900898
+V
+&src/Domain/DTOs/ConsolidatedBalance.cs,7/d/7df4be19738f9980416e90489fe6dee745e25698
+Y
+)src/Domain/DTOs/ConsolidatedBalanceDTO.cs,c/b/cbc195afea4c8e5b8d6043be9c393e8b9ad73e60
+Y
+)src/Domain/Interfaces/IEntryRepository.cs,c/8/c8c37d619fbb2c20edf45d5c1f8a5d7332cf77d4
+g
+7src/Application/Handlers/GetConsodatedBalanceHandler.cs,c/8/c87d32549f9872cdbe859d3297a264e92223c5f4
+U
+%src/Infrastructure/EntryRepository.cs,7/e/7e72e416945c0250076cf3ba26723264bffb2ba0
+J
+src/Domain/Models/Entry.cs,2/7/27fcc28a98738dc4f0982fdf792b6e1ca4a2f7b9
+R
+"Tests/UnitTests/AddEntryHandler.cs,4/b/4bddc292dd6081eeed095c9fba831725335d76fd
+]
+-Tests/UnitTests/GetConsoldatedBalanceTests.cs,4/a/4a13dff284621dae626bf1d8fe554b039dcb203b
+P
+ Tests/UnitTests/UnitTests.csproj,7/6/765438f8bf8ba2401fdbee2356ce73f7cf72a31f
+I
+src/BalanceService.csproj,7/f/7f2ac1984c1ff2b45ceeabdb4744afa62e438517
