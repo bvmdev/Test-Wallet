@@ -1,86 +1,34 @@
-# Test-Wallet
+# Test-WalletService - v.1.0.0
 
-# Arquitetura
+# Pre-Req
 
-![image](https://github.com/bvmdev/Test-Wallet/assets/33611537/3d53b629-171d-47a7-8d45-c202740a6e9a)
+.Net Runtime 8.0
+.Net SDK 8.0
 
-Os serviços não possuem ClassLibrary Core com o intuito de ter uma abordagem que segue o conceito de Simple First e também pela arquitetura ter definido não levar neste início de projeto interdependencias de código entre os projetos.
+# Running Entries API
 
-# Estrutura das APIs Envolvidas
+Open de the terminal
+Navigate to WalletService Directory (/src)
+Run dotnet restore
+Run dotnet build
+Run dotnet run
 
-Domain:
-Contém as entidades, DTOs e interfaces da API.
-
-Application:
-Contém os Handlers utilizados na API via Imediator.
-
-Migrations:
-Contém o controle de migrações do EF Core.
-
-Infrastructure:
-Implementações de repositórios e contexto de banco de dados.
-
-Tests:
-Testes Unitários da API.
-
-
-# Pré-Requisitos
-
-Instalar o .Net Runtime 8.0 e o .Net SDK 8.0
-Docker
-
-1- Abrir o terminal e navegar até a pasta Docker
-2- Run docker-compose up -d
-3- Confirmar se foi criado o container com o nome docker ou wallet-carrefour
-
-Os passos acima são obrigatórios para que seja criado o container do banco de dados.
-
-# Executando Entries API
-
-1- Abrir o Terminal
-2- Navegar até o diretório da api Entries (EntriesService/src)
-3- Run dotnet restore
-4- Run dotnet build
-5- Run dotnet ef database update --context ApplicationDbContext
-6- Run dotnet run
-
-Acessar o Swagger UI pela URL http://localhost:5001/swagger (ou a porta especificada no output do comando dotnet run)
+Access the swagger UI from http://localhost:PORT/swagger (port is yout output dotnet run listening on)
 
 Endpoints:
 
-POST /api/entry: Adicionar Lançamento
-GET /api/entryType: Listar Tipos de Lançamentos
-
-# Executando Balance API
-
-1- Abrir o Terminal
-2- Navegar até o diretório da api BValance (BalanceService/src)
-3- Run dotnet restore
-4- Run dotnet build
-5- Run dotnet run
-
-Acessar o Swagger UI pela URL http://localhost:5002/swagger (ou a porta especificada no output do comando dotnet run)
-
-GET /api/balance: Lista o extrato consolidado pela data de referência informando: TotalBalance, TotalDebit, TotalCredito, ReferenceDate
-
-Endpoints:
-
-POST /api/entry: Adicionar Lançamento
-GET /api/entryType: Listar Tipos de Lançamentos
+POST /api/entry: Add new Entry
+GET /api/entryType: Get Entry Types to use in POST Route
 
 
+# Running Unit Tests
 
-# Executando Testes Unitários das APIs
+Open de the terminal
 
-Abrir o Terminal
-
-Navegar para UnitTests do respectivo projeto (/Tests/UnitTests)
+Navigate to UnitTests Directory (/Tests/UnitTests)
 
 Run dotnet restore
 
 Run dotnet build
 
 Run dotnet test
-
-
-
